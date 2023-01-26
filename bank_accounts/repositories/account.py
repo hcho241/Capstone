@@ -1,7 +1,7 @@
 import psycopg2
-from models.account import Account
-from models.address import Address
-from models.customer import Customer 
+from bank_accounts.models.account import Account
+from bank_accounts.models.address import Address
+from bank_accounts.models.customer import Customer 
 
 class AccountRepository():
     host = "localhost"

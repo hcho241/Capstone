@@ -1,7 +1,7 @@
-from models.account import Account
-from repositories.account import AccountRepository
-from repositories.address import AddressRepository
-from repositories.customer import CustomerRepository
+from bank_accounts.models.account import Account
+from bank_accounts.repositories.account import AccountRepository
+from bank_accounts.repositories.address import AddressRepository
+from bank_accounts.repositories.customer import CustomerRepository
 
 class AccountServices():
     def __init__(self, account_repository : AccountRepository, address_repository : AddressRepository, customer_repository : CustomerRepository) -> None:
